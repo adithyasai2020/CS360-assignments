@@ -1,0 +1,46 @@
+/* Apply some basic reset and styling to the entire page */
+body {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Set the background color for the entire page */
+    line-height: 1.5;
+  }
+  
+  /* Center-align the content using flexbox */
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the container full viewport height */
+    
+  }
+
+  
+  /* Style the box containing your HTML elements */
+  #content-box {
+    background-color: #bbf7dc; /* Set the background color of the content box */
+    padding: 20px; /* Add some padding for spacing */
+    /* border-radius: 10px; Add rounded corners */
+    border: 1px solid #000;
+    
+  }
+
+  /* Add more specific styles for your HTML elements as needed */
+  /* Style the buttons with border-radius, light blue border, and transition */
+.color-change-button {
+    border-radius: 10px; /* Add a slight border radius */
+    border: 3px solid #6ec2e8; /* Add a light blue border */
+    background-color: #fff; /* Set the background color of the buttons */
+    padding: 5px 15px; /* Add padding to the buttons */
+    margin: 5px; /* Add margin for spacing between buttons */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    transition: background-color 0.3s; /* Add a transition for smooth color change */
+  }
+  
+  /* Change the button color to green on hover */
+  .color-change-button:hover {
+    background-color: #4caf50; /* Set the background color to green */
+  }
+  

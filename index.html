@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Basic Image Processing website</title>
+</head>
+<body>
+    <div id="container">
+        <div id="content-box">
+    
+    <canvas id="canvas" ></canvas>
+    
+    
+    <br>
+    <label for="backgroundImage">Select Background Image </label> <input type="file" id="backgroundImage" accept="image/*">
+    <br>
+    <label for="foregroundImage">Select Foreground Image </label> <input type="file" id="foregroundImage" accept="image/*">
+
+    <br>
+    <div id = "radio1">
+        
+        <label for="radio1"><strong>Image Mode </strong> </label>
+        <input type="radio"
+               id="background"
+               name="mode"
+               value="background">
+        <label for="background">Background Only </label>
+
+        <input type="radio"
+               id="alpha-blended"
+               name="mode"
+               value="alpha-blended">
+        <label for="alpha-blended">Alpha Blended</label>
+    </div>
+
+ 
+    <form>
+ 
+        <!-- Below input elements have attribute 
+                checked -->
+        <input type="checkbox"
+               name="check"
+               id="Grayscale" 
+               value="Grayscale">
+      GrayScale
+        <input type="checkbox" 
+                id="Sepia"
+               value="Sepia"> 
+               Sepia
+        <br>
+    </form>
+
+
+    <label for="contrast-slider">Contrast</label>
+    <input type="range" id="contrast-slider" min="0" max="1" step="0.01" value="0.5">
+    
+
+    <br>
+
+    <label for="brightness-slider">Brightness</label>
+    <input type="range" id="brightness-slider" min="-0.5" max="0.5" step="0.01" value="0.0">
+
+    <p><strong>Process Background Image</strong> </p>
+
+    <form id = "backgroundProcess">
+
+        
+ 
+        <!-- Below input elements have attribute 
+                checked -->
+        
+                Smooth
+        <input type="checkbox"
+               id="smooth" 
+               value="smooth">
+               
+               Sharpen
+        <input type="checkbox" 
+                id="sharpen"
+               value="sharpen"> 
+               
+               Gradient
+        <input type="checkbox" 
+                id="gradient"
+               value="gradient"> 
+               
+               Laplacian
+        <input type="checkbox" 
+                id="laplacian"
+               value="laplacian"> 
+        <br>
+    </form>
+
+    <button type="button" id="resetScene" class="color-change-button">Reset Scene</button>
+    
+    <!-- "Save Screenshot" button -->
+    <button type="button" id="saveScreenshot" class="color-change-button">Save Screenshot</button>
+    <!-- <a id="downloadLink" style="display: none" download="screenshot.jpg"></a> -->
+
+</div>
+</div>
+    <script type="text/javascript" src="glMatrix-0.9.5.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
